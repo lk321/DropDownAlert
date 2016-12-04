@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="35dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp"
+    android:weightSum="8"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/image_message_alert"
+        android:layout_width="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_message_alert"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="6.9"
+        >
+
+        <TextView
+            android:paddingTop="0dp"
+            android:id="@+id/text_message_alert_tittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="7pt"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="Alert"
+            />
+        <TextView
+
+            android:id="@+id/text_message_alert_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="6.5pt"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@android:color/darker_gray"
+            android:text="Esta es una prueba"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
