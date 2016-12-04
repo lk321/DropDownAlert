@@ -34,7 +34,8 @@
             android:maxLines="1"
             android:ellipsize="end"
             android:textSize="7pt"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark"
             android:text="Alert"
             />
         <TextView

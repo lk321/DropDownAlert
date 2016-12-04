@@ -35,9 +35,10 @@ public class DropDownAlert {
     private Timer timer;
 
 
-    public DropDownAlert(Activity context)
+    public DropDownAlert(Activity context,Context c)
     {
         this.context=context;
+        this.c=c;
 
     }
     public DropDownAlert(Bitmap bitmap, Activity context, String title, String content)
@@ -78,7 +79,7 @@ public class DropDownAlert {
 
 
         if (view==null) {
-            LayoutInflater factory = LayoutInflater.from(context);
+            LayoutInflater factory = LayoutInflater.from(c);
 
             if (bitmap != null) {
                 view = factory.inflate(R.layout.message_alert, null);

@@ -10,8 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="io.quickcoding.dropdownalert.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/show"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Show"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/black"
+        android:layout_centerInParent="true"
+        />
+
 </RelativeLayout>
