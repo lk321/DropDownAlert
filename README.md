@@ -1,2 +1,2 @@
 # DropDownAlert
- ![demo](https://github.com/quickcoding/DropDownAlert/edit/master/demo1.gif)
+ ![demo](https://github.com/quickcoding/DropDownAlert/blob/master/app/demo1.gif)
