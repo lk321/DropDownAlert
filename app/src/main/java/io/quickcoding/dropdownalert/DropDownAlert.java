@@ -35,10 +35,32 @@ public class DropDownAlert {
     private Timer timer;
 
 
-    public DropDownAlert(Activity context,Context c)
+    public interface DropDownAlertListener {
+        public void onClick(View v);
+
+
+    }
+
+    private DropDownAlertListener listener;
+
+    public void setTraffictListener(DropDownAlertListener listener)
+    {
+        this.listener = listener;
+    }
+
+    public DropDownAlert(Activity context,Context c,Boolean image)
     {
         this.context=context;
         this.c=c;
+        LayoutInflater factory = LayoutInflater.from(c);
+
+        if (image) {
+            view = factory.inflate(R.layout.message_alert, null);
+
+        } else {
+            view = factory.inflate(R.layout.message_alert_no_image, null);
+        }
+
 
     }
     public DropDownAlert(Bitmap bitmap, Activity context, String title, String content)
@@ -156,6 +178,8 @@ public class DropDownAlert {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                listener.onClick(v);
                 if (timer!=null)
                 {
                     timer.cancel();

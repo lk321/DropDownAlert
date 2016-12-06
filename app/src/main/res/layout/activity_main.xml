@@ -11,13 +11,25 @@
     tools:context="io.quickcoding.dropdownalert.MainActivity">
 
     <Button
-        android:id="@+id/show"
+        android:id="@+id/show_without_image"
         android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="Show"
+        android:layout_height="80dp"
+        android:text="Show without Image"
         android:textColor="@android:color/white"
         android:backgroundTint="@android:color/black"
-        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
         />
+
+    <Button
+        android:id="@+id/show_with_image"
+        android:layout_width="120dp"
+        android:layout_height="85dp"
+        android:text="Show with Image"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
 
 </RelativeLayout>
