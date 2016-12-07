@@ -43,7 +43,7 @@ public class DropDownAlert {
 
     private DropDownAlertListener listener;
 
-    public void setTraffictListener(DropDownAlertListener listener)
+    public void setDropDownAlertListener(DropDownAlertListener listener)
     {
         this.listener = listener;
     }

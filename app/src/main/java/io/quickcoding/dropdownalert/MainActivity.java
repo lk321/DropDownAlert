@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        downAlertImage.setTraffictListener(new DropDownAlert.DropDownAlertListener() {
+        downAlertImage.setDropDownAlertListener(new DropDownAlert.DropDownAlertListener() {
             @Override
             public void onClick(View v) {
 
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        downAlertNoImage.setTraffictListener(new DropDownAlert.DropDownAlertListener() {
+        downAlertNoImage.setDropDownAlertListener(new DropDownAlert.DropDownAlertListener() {
             @Override
             public void onClick(View v) {
 
