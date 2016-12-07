@@ -8,23 +8,6 @@ Simple Drop Down Alert para android
 Para usar como un mensaje de alerta: 
 
 ```java
-private DropDownAlert downAlertNoImage;
-
-downAlertNoImage=new DropDownAlert(this,getWindow().getContext(),false);
-        
-show_without_image.setOnClickListener(new View.OnClickListener() {
-            @Override
-    public void onClick(View view) {
-                downAlertNoImage.setTitle("Warning!");
-                downAlertNoImage.setContent("Do NOT click");
-                downAlertNoImage.show();
-
-            }
-});   
-```
-Para usar como un mensaje de algun chat: 
-
-```java
 Button show_without_image=(Button)findViewById(R.id.show_without_image);
 
 downAlertNoImage=new DropDownAlert(this,getWindow().getContext(),false);
@@ -37,12 +20,28 @@ show_without_image.setOnClickListener(new View.OnClickListener() {
                 downAlertNoImage.show();
 
             }
-});
+});   
+```
+Para usar como un mensaje de algun chat: 
+
+```java
+Button show_with_image=(Button)findViewById(R.id.show_with_image);
+downAlertImage=new DropDownAlert(this,getWindow().getContext(),true);
+show_with_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.logos);
+                downAlertImage.setBitmap(bm);
+                downAlertImage.setTitle("Quickcoding");
+                downAlertImage.setContent("Hello World!");
+                downAlertImage.show();
+            }
+        });
 ```
 Manejar el click del Drop Down Alert:
 
 ```java
- downAlertNoImage.setTraffictListener(new DropDownAlert.DropDownAlertListener() {
+downAlertNoImage.setTraffictListener(new DropDownAlert.DropDownAlertListener() {
             @Override
             public void onClick(View v) {
 
@@ -51,7 +50,7 @@ Manejar el click del Drop Down Alert:
                 toast.show();
 
             }
-        });
+});
 
 ```    
  ![demo2](https://github.com/quickcoding/DropDownAlert/blob/master/app/demo-dropdown-2.gif)
