@@ -41,7 +41,7 @@ show_with_image.setOnClickListener(new View.OnClickListener() {
 Manejar el click del Drop Down Alert:
 
 ```java
-downAlertNoImage.setTraffictListener(new DropDownAlert.DropDownAlertListener() {
+downAlertImage.setDropDownAlertListener(new DropDownAlert.DropDownAlertListener() {
             @Override
             public void onClick(View v) {
 
