@@ -1,11 +1,11 @@
 # DropDownAlert
 
-Simple Drop Down Alert para android 
+Simple Drop Down Alert for android 
 
 ![demo](https://github.com/quickcoding/DropDownAlert/blob/master/app/demo-dropdown-1.gif)
 
 
-Para usar como un mensaje de alerta: 
+Alert message: 
 
 ```java
 Button show_without_image=(Button)findViewById(R.id.show_without_image);
@@ -22,7 +22,8 @@ show_without_image.setOnClickListener(new View.OnClickListener() {
             }
 });   
 ```
-Para usar como un mensaje de algun chat: 
+
+Notification message:
 
 ```java
 Button show_with_image=(Button)findViewById(R.id.show_with_image);
@@ -38,7 +39,8 @@ show_with_image.setOnClickListener(new View.OnClickListener() {
             }
         });
 ```
-Manejar el click del Drop Down Alert:
+
+Drop down alert click handler:
 
 ```java
 downAlertImage.setDropDownAlertListener(new DropDownAlert.DropDownAlertListener() {
